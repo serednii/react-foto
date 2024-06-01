@@ -3,8 +3,11 @@ import qs from 'qs';
 import { useNavigate } from 'react-router-dom';
 import { Categories } from '../components/Categories';
 import { Sort } from '../components/Sort';
+import { useSelector } from 'react-redux';
+import { selectProductsData } from '../redux/products/selector';
 
 const Home: React.FC = () => {
+const  {items, status} = useSelector(selectProductsData);
 
   return (
     <div className="container">
@@ -19,7 +22,7 @@ const Home: React.FC = () => {
           <p>К сожалению, не удалось получить питсы. Попробуйте повторить попытку позже.</p>
         </div>
       ) : (
-        <h2>Произошла ошибка 😕</h2>
+        <div className="content__items">{status === 'loading' ? skeletons : pizzas}</div>
       )}
     </div>
   );
