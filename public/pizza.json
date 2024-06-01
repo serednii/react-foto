@@ -1,0 +1,131 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/1.jpg",
+      "title": "Маргарита",
+      "types": [
+        0
+      ],
+      "sizes": [
+        26,
+        32
+      ],
+      "price": 500,
+      "category": 0,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/2.jpg",
+      "title": "Гавайская",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        30,
+        40
+      ],
+      "price": 750,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/3.jpg",
+      "title": "Четыре Сыра",
+      "types": [
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 900,
+      "category": 2,
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/4.jpg",
+      "title": "Барбекю",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        32,
+        40
+      ],
+      "price": 1000,
+      "category": 3,
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/5.jpg",
+      "title": "Пепперони",
+      "types": [
+        0
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 850,
+      "category": 1,
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/6.jpg",
+      "title": "Мексиканская",
+      "types": [
+        1
+      ],
+      "sizes": [
+        30,
+        40
+      ],
+      "price": 950,
+      "category": 4,
+      "rating": 4.2
+    },
+    {
+      "id": 7,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/7.jpg",
+      "title": "Сырная",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        32,
+        40
+      ],
+      "price": 700,
+      "category": 2,
+      "rating": 4.3
+    },
+    {
+      "id": 8,
+      "imageUrl": "http://smm.zzz.com.ua/pizza/8.jpg",
+      "title": "Мясная",
+      "types": [
+        0,
+        1
+      ],
+      "sizes": [
+        26,
+        30,
+        40
+      ],
+      "price": 1100,
+      "category": 5,
+      "rating": 4.6
+    }
+  ]
