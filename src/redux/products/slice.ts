@@ -21,11 +21,11 @@ const productsSlice = createSlice({
             state.status = Status.LOADING;
             state.items = [];
         })
-        .addCase(fetchProducts.fulfilled, (state, action) => {
+        builder.addCase(fetchProducts.fulfilled, (state, action) => {
             state.status = Status.SUCCESS;
             state.items = action.payload;
         })
-        .addCase(fetchProducts.rejected, (state) => {
+        builder.addCase(fetchProducts.rejected, (state) => {
             state.status = Status.ERROR;
             state.items = [];
         })

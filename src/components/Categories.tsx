@@ -2,15 +2,15 @@ import React from 'react';
 
 
 
-const categories = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const categories = ['Все', 'Instantní', 'Bezzrcadlovky', 'Zrcadlovky', 'Kompaktní', 'Objektivy'];
 
 export const Categories: React.FC = React.memo(() => {
   return (
     <div className="categories">
       <ul>
-        {categories.map((categoryName, i) => (
-          <li key={i} >
-
+      {categories.map((categoryName, i) => (
+          <li key={i}  className={!true  ? 'active' : ''}>
+            {categoryName}
           </li>
         ))}
       </ul>

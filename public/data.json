@@ -1,208 +1,192 @@
 [
-    {
-      "id": 1,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/začátečníky1.webp",
-      "title": "МаргаCanon EOS R50 černá + RF-S 18-150mm S+ cashback 500 Kčрита",
-      "types": [0],
-      "sizes": [26, 32],
-      "price": 2569,
-      "category": 0,
-      "rating": 5 
-    },
-    {
-      "id": 2,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/začátečníky2.webp",
-      "title": "ГаSony Alpha A7 II + FE 24–70 mm f/4.0 ZA OSS Vario-Tessarвайская",
-      "types": [0, 1],
-      "sizes": [30, 40],
-      "price": 12458,
-      "category": 0,
-      "rating": 4
-    },
-    {
-      "id": 3,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/začátečníky3.webp",
-      "title": "Rollei Sportsline 60 Plus",
-      "types": [1],
-      "sizes": [26, 30, 40],
-      "price": 14587,
-      "category": 0,
-      "rating": 4.5
-    },
-
-
-
-    {
-      "id": 4,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky1.webp",
-      "title": "Canon EOS RP + RF 24-105 mm f/4.0-7.1 IS STM",
-      "types": [0, 1],
-      "sizes": [26, 32, 40],
-      "price": 22365,
-      "category": 1,
-      "rating": 4.7
-    },
-    {
-      "id": 5,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky2.webp",
-      "title": "ПеппSony Alpha A7 III + FE 28–70 mm F3,5–5,6 OSS+ akce Klikni a ušetřiерони",
-      "types": [0],
-      "sizes": [26, 30, 40],
-      "price": 12365,
-      "category": 1,
-      "rating": 4.8
-    },
-    {
-      "id": 6,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky3.webp",
-      "title": "Sony Alpha A7 III tělo+ akce Klikni a ušetři",
-      "types": [1],
-      "sizes": [30, 40],
-      "price": 9350,
-      "category": 1,
-      "rating": 4.2
-    },
-    {
-      "id": 7,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky4.webp",
-      "title": "Sony Alpha A7 IV tělo+ akce Klikni a ušetři",
-      "types": [0, 1],
-      "sizes": [26, 32, 40],
-      "price": 7020,
-      "category": 1,
-      "rating": 4.3
-    },
-
-
-
-
-    {
-      "id": 8,
-      "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky1.webp",
-      "title": "Canon EOS 250D černý + EF-S 18-55 mm f/4-5.6 IS STM",
-      "types": [0, 1],
-      "sizes": [26, 30, 40],
-      "price": 2453,
-      "category": 2,
-      "rating": 4.6
-    },
-    {
-        "id": 8,
-        "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky2.webp",
-        "title": "Nikon D7500 + AF-S DX 18-140 mm f/3,5-5,6G ED VR",
-        "types": [0, 1],
-        "sizes": [26, 30, 40],
-        "price": 14563,
-        "category": 2,
-        "rating": 4.6
-      },
-      {
-        "id": 8,
-        "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky3.webp",
-        "title": "Canon EOS 90D + EF-S 18-135 mm f/3.5-5.6 IS USM",
-        "types": [0, 1],
-        "sizes": [26, 30, 40],
-        "price": 6554,
-        "category": 2,
-        "rating": 4.6
-      },
-      {
-        "id": 8,
-        "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky4.webp",
-        "title": "PENTAX K-1 Mark II",
-        "types": [0, 1],
-        "sizes": [26, 30, 40],
-        "price": 11254,
-        "category": 2,
-        "rating": 4.6
-      },
-
-
-
-      {
-        "id": 8,
-        "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní1.webp",
-        "title": "Kodak WPZ2 Blue",
-        "types": [0, 1],
-        "sizes": [26, 30, 40],
-        "price": 2365,
-        "category": 3,
-        "rating": 4.6
-      },
-      {
-          "id": 8,
-          "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní2.webp",
-          "title": "OM SYSTEM TG-7 červený",
-          "types": [0, 1],
-          "sizes": [26, 30, 40],
-          "price": 11452,
-          "category": 3,
-          "rating": 4.6
-        },
-        {
-          "id": 8,
-          "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní3.webp",
-          "title": "OM SYSTEM TG-7 černý",
-          "types": [0, 1],
-          "sizes": [26, 30, 40],
-          "price": 11452,
-          "category": 3,
-          "rating": 4.6
-        },
-        {
-          "id": 8,
-          "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní4.webp",
-          "title": "Sony ZV-1+ akce Klikni a ušetři",
-          "types": [0, 1],
-          "sizes": [26, 30, 40],
-          "price": 14456,
-          "category": 3,
-          "rating": 4.6
-        },
-
-
-
-
-
-        {
-            "id": 8,
-            "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy1.webp",
-            "title": "Canon EF 75-300mm f/4.0 - 5.6 III Zoom",
-            "types": [0, 1],
-            "sizes": [26, 30, 40],
-            "price": 5989,
-            "category": 4,
-            "rating": 4.9
-          },
-          {
-              "id": 8,
-              "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy2.webp",
-              "title": "Canon RF 50mm f/1.8 STM+ cashback 600 Kč",
-              "types": [0, 1],
-              "sizes": [26, 30, 40],
-              "price": 5089,
-              "category": 4,
-              "rating": 4.8
-            },
-            {
-              "id": 8,
-              "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy3.webp",
-              "title": "Canon EF 50mm f/1.8 STM",
-              "types": [0, 1],
-              "sizes": [26, 30, 40],
-              "price": 3059,
-              "category": 4,
-              "rating": 4.9
-            },
-            {
-              "id": 8,
-              "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy4.webp",
-              "title": "Samyang AF 35-150mm f/2-2.8 Sony FE",
-              "types": [0, 1],
-              "sizes": [26, 30, 40],
-              "price": 27390,
-              "category": 4,
-              "rating": 5
-            }
-  ]
-  
+  {
+    "id": "1",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/začátečníky1.webp",
+    "title": "Canon EOS R50 černá + RF-S 18-150mm S+ cashback 500 Kč",
+    "types": [0],
+    "sizes": [26, 32],
+    "price": 2569,
+    "category": 0,
+    "rating": 5 
+  },
+  {
+    "id": "2",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/začátečníky2.webp",
+    "title": "Sony Alpha A7 II + FE 24–70 mm f/4.0 ZA OSS Vario-Tessa",
+    "types": [0, 1],
+    "sizes": [30, 40],
+    "price": 12458,
+    "category": 0,
+    "rating": 4
+  },
+  {
+    "id": "3",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/začátečníky3.webp",
+    "title": "Rollei Sportsline 60 Plus",
+    "types": [1],
+    "sizes": [26, 30, 40],
+    "price": 14587,
+    "category": 0,
+    "rating": 4.5
+  },
+  {
+    "id": "4",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky1.webp",
+    "title": "Canon EOS RP + RF 24-105 mm f/4.0-7.1 IS STM",
+    "types": [0, 1],
+    "sizes": [26, 32, 40],
+    "price": 22365,
+    "category": 1,
+    "rating": 4.7
+  },
+  {
+    "id": "5",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky2.webp",
+    "title": "Sony Alpha A7 III + FE 28–70 mm F3,5–5,6 OSS+ akce Klikni a ušetř",
+    "types": [0],
+    "sizes": [26, 30, 40],
+    "price": 12365,
+    "category": 1,
+    "rating": 4.8
+  },
+  {
+    "id": "6",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky3.webp",
+    "title": "Sony Alpha A7 III tělo+ akce Klikni a ušetři",
+    "types": [1],
+    "sizes": [30, 40],
+    "price": 9350,
+    "category": 1,
+    "rating": 4.2
+  },
+  {
+    "id": "7",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Bezzrcadlovky4.webp",
+    "title": "Sony Alpha A7 IV tělo+ akce Klikni a ušetři",
+    "types": [0, 1],
+    "sizes": [26, 32, 40],
+    "price": 7020,
+    "category": 1,
+    "rating": 4.3
+  },
+  {
+    "id": "8",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky1.webp",
+    "title": "Canon EOS 250D černý + EF-S 18-55 mm f/4-5.6 IS STM",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 2453,
+    "category": 2,
+    "rating": 4.6
+  },
+  {
+    "id": "9",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky2.webp",
+    "title": "Nikon D7500 + AF-S DX 18-140 mm f/3,5-5,6G ED VR",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 14563,
+    "category": 2,
+    "rating": 4.6
+  },
+  {
+    "id": "10",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky3.webp",
+    "title": "Canon EOS 90D + EF-S 18-135 mm f/3.5-5.6 IS USM",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 6554,
+    "category": 2,
+    "rating": 4.6
+  },
+  {
+    "id": "11",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/zrcadlovky4.webp",
+    "title": "PENTAX K-1 Mark II",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 11254,
+    "category": 2,
+    "rating": 4.6
+  },
+  {
+    "id": "12",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní1.webp",
+    "title": "Kodak WPZ2 Blue",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 2365,
+    "category": 3,
+    "rating": 4.6
+  },
+  {
+    "id": "13",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní2.webp",
+    "title": "OM SYSTEM TG-7 červený",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 11452,
+    "category": 3,
+    "rating": 4.6
+  },
+  {
+    "id": "14",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní3.webp",
+    "title": "OM SYSTEM TG-7 černý",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 11452,
+    "category": 3,
+    "rating": 4.6
+  },
+  {
+    "id": "15",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Kompaktní4.webp",
+    "title": "Sony ZV-1+ akce Klikni a ušetři",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 14456,
+    "category": 3,
+    "rating": 4.6
+  },
+  {
+    "id": "16",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy1.webp",
+    "title": "Canon EF 75-300mm f/4.0 - 5.6 III Zoom",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 5989,
+    "category": 4,
+    "rating": 4.9
+  },
+  {
+    "id": "17",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy2.webp",
+    "title": "Canon RF 50mm f/1.8 STM+ cashback 600 Kč",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 5089,
+    "category": 4,
+    "rating": 4.8
+  },
+  {
+    "id": "18",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy3.webp",
+    "title": "Canon EF 50mm f/1.8 STM",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 3059,
+    "category": 4,
+    "rating": 4.9
+  },
+  {
+    "id": "19",
+    "imageUrl": "http://smm.zzz.com.ua/fotoaparaty/Objektivy4.webp",
+    "title": "Samyang AF 35-150mm f/2-2.8 Sony FE",
+    "types": [0, 1],
+    "sizes": [26, 30, 40],
+    "price": 27390,
+    "category": 4,
+    "rating": 5
+  }
+]
