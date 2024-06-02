@@ -2,14 +2,17 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logoSvg from '../assets/img/foto-logo.png';
 import { Search } from './Search';
+import { useSelector } from 'react-redux';
+import { selectCart } from '../redux/cart/selectors';
 
 
 export const Header: React.FC = () => {
-  // const { items, totalPrice } = useSelector(selectCart);
+  const { items, totalPrice } = useSelector(selectCart);
   const location = useLocation();
   const isMounted = React.useRef(false);
 
 
+  const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
 
 
   return (
@@ -28,7 +31,7 @@ export const Header: React.FC = () => {
         <div className="header__cart">
           {location.pathname !== '/cart' && (
             <Link to="/cart" className="button button--cart">
-              <span>546 ₽</span>
+            <span>{totalPrice} ₽</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"
@@ -58,7 +61,7 @@ export const Header: React.FC = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span>256</span>
+              <span>{totalCount}</span>
             </Link>
           )}
         </div>

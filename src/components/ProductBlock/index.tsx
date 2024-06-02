@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-// import { selectCartItemById } from '../../redux/cart/selectors';
-// import { CartItem } from '../../redux/cart/types';
-// import { addItem } from '../../redux/cart/slice';
+import { selectCartItemById } from '../../redux/cart/selectors';
+import { CartItem } from '../../redux/cart/types';
+import { addItem } from '../../redux/cart/slice';
 
 const typeNames = ['тонкое', 'традиционное'];
 
@@ -25,25 +25,26 @@ export const ProductBlock: React.FC<PizzaBlockProps> = ({
   sizes,
   types,
 }) => {
+  console.log('ProductBlock')
   const dispatch = useDispatch();
-  // const cartItem = useSelector(selectCartItemById(id));
+  const cartItem = useSelector(selectCartItemById(id));
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
 
-  // const addedCount = cartItem ? cartItem.count : 0;
+  const addedCount = cartItem ? cartItem.count : 0;
 
-  // const onClickAdd = () => {
-  //   const item: CartItem = {
-  //     id,
-  //     title,
-  //     price,
-  //     imageUrl,
-  //     type: typeNames[activeType],
-  //     size: sizes[activeSize],
-  //     count: 0,
-  //   };
-  //   // dispatch(addItem(item));
-  // };
+  const onClickAdd = () => {
+    const item: CartItem = {
+      id,
+      title,
+      price,
+      imageUrl,
+      type: typeNames[activeType],
+      size: sizes[activeSize],
+      count: 0,
+    };
+    dispatch(addItem(item));
+  };
 
   return (
     <div className="product-block-wrapper">
@@ -76,7 +77,7 @@ export const ProductBlock: React.FC<PizzaBlockProps> = ({
         </div>
         <div className="product-block__bottom">
           <div className="product-block__price">от {price} ₽</div>
-          <button className="button button--outline button--add">
+          <button onClick={onClickAdd}  className="button button--outline button--add">
             <svg
               width="12"
               height="12"
@@ -89,7 +90,7 @@ export const ProductBlock: React.FC<PizzaBlockProps> = ({
               />
             </svg>
             <span>Добавить</span>
-            {/* {addedCount > 0 && <i>{addedCount}</i>} */}
+            {addedCount > 0 && <i>{addedCount}</i>}
           </button>
         </div>
       </div>
