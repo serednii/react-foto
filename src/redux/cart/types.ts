@@ -1,5 +1,8 @@
+import { Status } from '../types'
+
 export type CartItem = {
-    id: string;
+    id?: string;
+    currentId?: string;
     title: string;
     price: number;
     imageUrl: string;
@@ -11,4 +14,5 @@ export type CartItem = {
 export interface CartSliceState {
     totalPrice: number;
     items: CartItem[];
+    status: Status;
 }

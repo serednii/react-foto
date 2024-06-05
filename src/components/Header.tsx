@@ -5,15 +5,10 @@ import { Search } from './Search';
 import { useSelector } from 'react-redux';
 import { selectCart } from '../redux/cart/selectors';
 
-
 export const Header: React.FC = () => {
   const { items, totalPrice } = useSelector(selectCart);
   const location = useLocation();
-  const isMounted = React.useRef(false);
-
-
   const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
-
 
   return (
     <div className="header">
@@ -23,7 +18,7 @@ export const Header: React.FC = () => {
             <img width="38" height="38" src={logoSvg} alt="Foto logo" />
             <div>
               <h1>React Foto V2</h1>
-              <p>Самие современние вотоапарати</p>
+              <p>Nejmodernější votoaparaty</p>
             </div>
           </div>
         </Link>

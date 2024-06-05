@@ -1,25 +1,35 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-
-import { CartItem, CartEmpty } from '../components';
-
+import { useSelector } from 'react-redux';
+import { useAppDispatch } from '../redux/store';
+import { CartItemComponent, CartEmpty } from '../components';
 import { selectCart } from '../redux/cart/selectors';
-import { clearItems } from '../redux/cart/slice';
+import { fetchDeleteAllProductCards, fetchGetProductCard } from '../redux/cart/asyncAction';
 
 const Cart: React.FC = () => {
-  const dispatch = useDispatch();
-  const { totalPrice, items } = useSelector(selectCart);
+  const { totalPrice, items, status } = useSelector(selectCart);
+  const dispatch = useAppDispatch();
+  const startComponent =  useRef(true) 
+
+  useEffect(() => {
+    startComponent.current = false;
+    dispatch(fetchGetProductCard())
+},[])
 
   const totalCount = items.reduce((sum: number, item: any) => sum + item.count, 0);
 
   const onClickClear = () => {
     if (window.confirm('Очистить корзину?')) {
-      dispatch(clearItems());
+      dispatch(fetchDeleteAllProductCards());
     }
   };
 
-  if (!totalPrice) {
+if(status === 'loading' && startComponent.current)
+{
+  return (<h1>Download...</h1>)
+} 
+
+ if (!totalPrice) {
     return <CartEmpty />;
   }
 
@@ -53,7 +63,7 @@ const Cart: React.FC = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"></path>
             </svg>
-            Корзина
+            Košík
           </h2>
           <div onClick={onClickClear} className="cart__clear">
             <svg
@@ -88,23 +98,23 @@ const Cart: React.FC = () => {
                 strokeLinejoin="round"></path>
             </svg>
 
-            <span>Очистить корзину</span>
+            <span>Prázdný koš</span>
           </div>
         </div>
         <div className="content__items">
           {items.map((item: any) => (
-            <CartItem key={item.id} {...item} />
+            <CartItemComponent key={item.id} {...item} />
           ))}
         </div>
         <div className="cart__bottom">
           <div className="cart__bottom-details">
             <span>
               {' '}
-              Всего пицц: <b>{totalCount} шт.</b>{' '}
+              Celkem produktů: <b>{totalCount} шт.</b>{' '}
             </span>
             <span>
               {' '}
-              Сумма заказа: <b>{totalPrice} ₽</b>{' '}
+              Cena objednávky: <b>{totalPrice} ₽</b>{' '}
             </span>
           </div>
           <div className="cart__bottom-buttons">
@@ -123,10 +133,10 @@ const Cart: React.FC = () => {
                   strokeLinejoin="round"></path>
               </svg>
 
-              <span>Вернуться назад</span>
+              <span>Vrať se</span>
             </Link>
             <div className="button pay-btn">
-              <span>Оплатить сейчас</span>
+              <span>Zaplať teď</span>
             </div>
           </div>
         </div>

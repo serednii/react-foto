@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectCartItemById } from '../../redux/cart/selectors';
 import { CartItem } from '../../redux/cart/types';
-import { addItem } from '../../redux/cart/slice';
+import { AnyAction } from 'redux';
+import { fetchAddProductCard, fetchUpdateProductCard } from '../../redux/cart/asyncAction';
+import { ThunkDispatch } from 'redux-thunk';
+import { RootState } from '../../redux/store';
 
 const typeNames = ['тонкое', 'традиционное'];
 
-type PizzaBlockProps = {
+type ProductBlockProps = {
   id: string;
+  currentId: string;
   title: string;
   price: number;
   imageUrl: string;
@@ -17,33 +21,38 @@ type PizzaBlockProps = {
   rating: number;
 };
 
-export const ProductBlock: React.FC<PizzaBlockProps> = ({
+export const ProductBlock: React.FC<ProductBlockProps> = ({
   id,
+  currentId,
   title,
   price,
   imageUrl,
   sizes,
   types,
 }) => {
-  console.log('ProductBlock')
-  const dispatch = useDispatch();
-  const cartItem = useSelector(selectCartItemById(id));
+  const dispatch = useDispatch<ThunkDispatch<RootState, void, AnyAction>>();
+  const cartItem = useSelector(selectCartItemById(currentId));
   const [activeType, setActiveType] = React.useState(0);
   const [activeSize, setActiveSize] = React.useState(0);
 
   const addedCount = cartItem ? cartItem.count : 0;
-
+  const addedId = cartItem ? cartItem.id : undefined;
   const onClickAdd = () => {
+
     const item: CartItem = {
-      id,
+      currentId,
       title,
       price,
       imageUrl,
       type: typeNames[activeType],
       size: sizes[activeSize],
-      count: 0,
+      count: 1,
     };
-    dispatch(addItem(item));
+    if(addedCount === 0 ){
+      dispatch(fetchAddProductCard(item));
+    }else{
+      dispatch(fetchUpdateProductCard({...item, id: addedId, count: addedCount + 1}));
+    }
   };
 
   return (
@@ -89,7 +98,7 @@ export const ProductBlock: React.FC<PizzaBlockProps> = ({
                 fill="white"
               />
             </svg>
-            <span>Добавить</span>
+            <span>Přidat</span>
             {addedCount > 0 && <i>{addedCount}</i>}
           </button>
         </div>

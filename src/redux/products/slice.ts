@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ProductsSliceState } from "./types";
-import { Status, Products } from "./types";
+import { Products } from "./types";
+import {Status} from '../types';
 import {fetchProducts} from './asyncAction';
 
 const initialState: ProductsSliceState = {
@@ -32,5 +33,4 @@ const productsSlice = createSlice({
     }
 })
 
-// export const {}
 export default productsSlice.reducer;

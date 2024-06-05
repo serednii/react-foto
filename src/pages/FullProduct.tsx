@@ -5,7 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { PRODUCTS_URL } from '../constants/urls';
 
 const FullProduct: React.FC = () => {
-  const [pizza, setPizza] = React.useState<{
+  const [product, setProduct] = React.useState<{
     imageUrl: string;
     title: string;
     price: number;
@@ -16,32 +16,32 @@ const FullProduct: React.FC = () => {
 console.log(id)
 console.log(navigate)
   React.useEffect(() => {
-    async function fetchPizza() {
+    async function fetchProduct() {
       try {
         console.log(PRODUCTS_URL + id)
         const { data } = await axios.get(PRODUCTS_URL + id);
-        setPizza(data);
+        setProduct(data);
       } catch (error) {
         alert('Ошибка при получении пиццы!');
         navigate('/');
       }
     }
 
-    fetchPizza();
+    fetchProduct();
   }, []);
 
-  if (!pizza) {
-    return <>Загрузка...</>;
+  if (!product) {
+    return <>Načítání...</>;
   }
 
   return (
     <div className="container">
-      <img src={pizza.imageUrl} />
-      <h2>{pizza.title}</h2>
-      <h4>{pizza.price} ₽</h4>
+      <img src={product.imageUrl} />
+      <h2>{product.title}</h2>
+      <h4>{product.price} ₽</h4>
       <Link to="/">
         <button className="button button--outline button--add">
-          <span>Назад</span>
+          <span>Zadní</span>
         </button>
       </Link>
     </div>

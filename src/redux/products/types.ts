@@ -1,4 +1,4 @@
-
+import { Status } from '../types';
 
 export type Products = {
     id: string;
@@ -8,6 +8,7 @@ export type Products = {
     sizes: number[];
     types: number[];
     rating: number;
+    currentId: string;
 }
 
 export type SearchProductsParams = {
@@ -17,12 +18,6 @@ export type SearchProductsParams = {
     search: string;
     currentPage: string;
   };
-
-export enum Status {
-    LOADING = 'loading',
-    SUCCESS = 'completed',
-    ERROR = 'error',
-}
 
 export interface ProductsSliceState {
     items:Products[];

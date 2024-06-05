@@ -17,20 +17,19 @@ type SortPopupProps = {
 };
 
 export const sortList: SortItem[] = [
-  { name: 'популярности (DESC)', sortProperty: SortPropertyEnum.RATING_DESC },
-  { name: 'популярности (ASC)', sortProperty: SortPropertyEnum.RATING_ASC },
-  { name: 'цене (DESC)', sortProperty: SortPropertyEnum.PRICE_DESC },
-  { name: 'цене (ASC)', sortProperty: SortPropertyEnum.PRICE_ASC },
-  { name: 'алфавиту (DESC)', sortProperty: SortPropertyEnum.TITLE_DESC },
-  { name: 'алфавиту (ASC)', sortProperty: SortPropertyEnum.TITLE_ASC },
+  { name: `popularita ↑`, sortProperty: SortPropertyEnum.RATING_DESC },
+  { name: 'popularita ↓', sortProperty: SortPropertyEnum.RATING_ASC },
+  { name: 'cena ↑', sortProperty: SortPropertyEnum.PRICE_DESC },
+  { name: 'cena ↓', sortProperty: SortPropertyEnum.PRICE_ASC },
+  { name: 'abeceda ↑', sortProperty: SortPropertyEnum.TITLE_DESC },
+  { name: 'abeceda ↓', sortProperty: SortPropertyEnum.TITLE_ASC },
 ];
 
 export const Sort: React.FC<SortPopupProps> = React.memo(({ value }) => {
   const dispatch = useDispatch();
   const sortRef = React.useRef<HTMLDivElement>(null);
-
   const [open, setOpen] = React.useState(false);
-
+  
   const onClickListItem = (obj: SortItem) => {
     dispatch(setSort(obj));
     setOpen(false);
@@ -46,7 +45,6 @@ export const Sort: React.FC<SortPopupProps> = React.memo(({ value }) => {
     };
     document.body.addEventListener('click', handleClickOutside);
     return () =>{
-      console.log('didmount')
       document.body.removeEventListener('click', handleClickOutside);
     } 
   }, []);
@@ -65,7 +63,7 @@ export const Sort: React.FC<SortPopupProps> = React.memo(({ value }) => {
             fill="#2C2C2C"
           />
         </svg>
-        <b>Сортировка по:</b>
+        <b>Seřazeno podle:</b>
         <span onClick={() => setOpen(!open)}>{value.name}</span>
       </div>
       {open && (
